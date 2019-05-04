@@ -1,0 +1,76 @@
+---
+title: "ggplot graph for your CV"
+date: "04/05/2019"
+output: 
+    ioslides_presentation:
+        css: template.css
+---
+    
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(extrafont)
+
+```
+
+## Why did I decide to make this application?
+
+<style>
+div.square { background-color : #FADBD8; border-radius: 15px; padding: 15px 10px 10px 10px;}
+</style>
+<div class = "square">
+
+There is a good saying "Eat your own dog food" (I really hope that people are still saying it, otherwise I am just being weird...).
+
+So why not use ggplot graphs to represent your skills in your Curriculum Vitae?
+ 
+
+</div>
+
+## What inputs are available?
+
+In my app you can input:
+
+* Skill names;
+* Skill grades;
+* The color of the bubbles.
+
+More inputs will be available later!
+
+## Example
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+skills_names <- c("R", "Tableau", "Python", "Excel", "Machine \nLearning")
+    skills_values <- c(6, 4, 2, 9, 3)
+    
+    skills <- data.frame(skill = skills_names,
+                  grade = skills_values)
+
+ggplot(skills, aes(x = skill, y = grade)) +
+        geom_segment(aes(x = skill, xend = skill, y = 0, yend = grade), color="#A0A0A0") +
+        geom_point(size = 10, color = "#943126") +
+        labs(title = "Skills", y = "Proficiency") +
+        theme_minimal() +
+        theme(plot.title = element_text(hjust = 0.5, size = 25), 
+              text = element_text(family = "Montserrat"), 
+              axis.ticks.y = element_blank(),
+              axis.title.x = element_blank(),
+              axis.title.y = element_text(size = 18),
+              axis.text.y = element_text(size = 15),
+              axis.text.x = element_text(angle = 90, hjust = 1, size = 18)) +
+        scale_y_continuous(breaks = seq(0,10, by = 1), minor_breaks = seq(0,10, by = 1)) +
+        coord_cartesian(ylim = c(0, 10))
+```
+
+## Ways to improve it
+
+This app is just a playground for the project I have in mind, so there are still a lot of things I want to do:
+
+* Add possibility to download the graph;
+* Add "Font"" as an input field;
+* Make possipibility to input as many skills as you want (not exactly 5);
+* And finally - make all my CV in Shiny Dashboard. That would be awesome, right?
+
+## Thank you!
+
+Please add any suggestion to the comments, I really appreciate it :)

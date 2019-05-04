@@ -1,0 +1,12 @@
+name: ggplot_cv_graph
+title: ggplot_cv_graph
+username:
+account: morta
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 908969
+bundleId: 2059619
+url: https://morta.shinyapps.io/ggplot_cv_graph/
+when: 1556964083.79753
+asMultiple: FALSE
+asStatic: FALSE

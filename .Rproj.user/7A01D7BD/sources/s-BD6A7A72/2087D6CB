@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556957284634.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2087D6CB",
+    "lastKnownWriteTime" : 1556963483,
+    "last_content_update" : 1556963483938,
+    "path" : "C:/Users/PC/Desktop/R course/Data Science course/shiny_app_ggplot/ggplot_colours/ui.R",
+    "project_path" : "ggplot_colours/ui.R",
+    "properties" : {
+        "cursorPosition" : "68,45",
+        "scrollLine" : "51"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
