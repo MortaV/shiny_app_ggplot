@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "839779837",
+    "hash" : "4197767962",
     "id" : "B467FF1D",
-    "lastKnownWriteTime" : 1556965783,
-    "last_content_update" : 1556965783151,
+    "lastKnownWriteTime" : 1556971093,
+    "last_content_update" : 1556971093467,
     "path" : "C:/Users/PC/Desktop/R course/Data Science course/shiny_app_ggplot/presenentation.Rmd",
     "project_path" : "presenentation.Rmd",
     "properties" : {
-        "cursorPosition" : "71,5",
-        "scrollLine" : "54"
+        "cursorPosition" : "69,12",
+        "scrollLine" : "51"
     },
     "relative_order" : 1,
     "source_on_save" : false,

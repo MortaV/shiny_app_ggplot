@@ -67,10 +67,6 @@ ggplot(skills, aes(x = skill, y = grade)) +
 This app is just a playground for the project I have in mind, so there are still a lot of things I want to do:
 
 * Add possibility to download the graph;
-* Add "Font"" as an input field;
+* Add "Font" as an input field;
 * Make possipibility to input as many skills as you want (not exactly 5);
 * And finally - make all my CV in Shiny Dashboard. That would be awesome, right?
-
-## Thank you!
-
-Please add any suggestion to the comments, I really appreciate it :)
